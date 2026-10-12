@@ -24,11 +24,10 @@ python -m pip install -r requirements.txt
 
 **------- Ejecución -------**
 
+Los parámetros configurables son n_estimators, max_depth, min_samples_leaf y random_state.
 Ejemplo de entrenamiento:
 
 python water_potability.py --n-estimators 100 --max-depth 50 --min-samples-leaf 1 --random-state 0
-
-Los parámetros configurables son n_estimators, max_depth, min_samples_leaf y random_state.
 
 **------- Seguimiento con MLflow -------**
 
