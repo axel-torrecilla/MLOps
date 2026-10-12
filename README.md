@@ -1,10 +1,10 @@
 **#Water Potability — MLOps**
 
-**##------- Descripción -------**
+**------- Descripción -------**
 
 Proyecto de clasificación para predecir la potabilidad del agua mediante Random Forest. Se utiliza MLflow Tracking para registrar y comparar experimentos.
 
-**##------- Tecnologías -------**
+**------- Tecnologías -------**
 
 - Python
 - Pandas
@@ -12,17 +12,17 @@ Proyecto de clasificación para predecir la potabilidad del agua mediante Random
 - Matplotlib
 - MLflow
 
-**##------- Requisitos -------**
+**------- Requisitos -------**
 
 Python instalado y el archivo water_potability.csv ubicado en la misma carpeta que water_potability.py.
 
-**##------- Instalación -------**
+**------- Instalación -------**
 
 Instalar las dependencias con:
 
 python -m pip install -r requirements.txt
 
-**##------- Ejecución -------**
+**------- Ejecución -------**
 
 Ejemplo de entrenamiento:
 
@@ -30,7 +30,7 @@ python water_potability.py --n-estimators 100 --max-depth 50 --min-samples-leaf 
 
 Los parámetros configurables son n_estimators, max_depth, min_samples_leaf y random_state.
 
-**##------- Seguimiento con MLflow -------**
+**------- Seguimiento con MLflow -------**
 
 Para consultar la interfaz local, iniciar MLflow desde la carpeta del proyecto:
 
@@ -38,10 +38,10 @@ mlflow ui --backend-store-uri ./mlruns --port 5000
 
 Abrir http://127.0.0.1:5000 en el navegador.
 
-**##------- Métricas -------**
+**------- Métricas -------**
 
 - Accuracy
 - Recall de la clase potable (recall_potable)
 
-**---- Artefactos ----**
+**------- Artefactos -------**
 MLflow registra el modelo y los artefactos de evaluación, incluida la matriz de confusión y el archivo de métricas.
